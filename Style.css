@@ -4,10 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(241, 243, 244);
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.gradientColor {
+    margin: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(54, 73, 243), rgb(19, 8, 8), rgb(236, 67, 242), rgb(235, 44, 72));
+   /*  text-shadow: 5px 10px 5px rgb(247, 247, 245); */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -17,7 +33,7 @@ nav {
     gap: 10px'
 }
 
-nav ul  {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,4 +43,9 @@ nav ul  {
 nav ul li {
     list-style-type: none;
     margin: 10px;
+    color: black;
+}
+
+#toggle {
+    margin: 20px;
 }
