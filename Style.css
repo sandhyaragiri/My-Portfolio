@@ -21,10 +21,10 @@ header {
    /*  text-shadow: 5px 10px 5px rgb(247, 247, 245); */
     background-clip: text;
     -webkit-background-clip: text;
-
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+
 
 nav {
     display: flex;
@@ -40,12 +40,32 @@ nav ul {
     margin: 20px;
 }
 
+nav ul a {
+    text-decoration: transparent;
+}
+
+nav ul a:hover {
+ text-decoration: underline;
+ color: blue;
+ font-size: 1.1em;
+ transition: 0.2s;
+ font-weight: 500;
+}
+
 nav ul li {
     list-style-type: none;
     margin: 10px;
     color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
 }
+
 
 #toggle {
     margin: 20px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    border-radius: 10px;
 }
