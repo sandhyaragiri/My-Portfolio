@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(241, 243, 244);
+body.dark {
+  background-color: #111;
+  color: white;
+}
+
+body.dark nav ul li {
+    color: white;
 }
 
 header {
@@ -17,7 +22,7 @@ header {
 .gradientColor {
     margin: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, rgb(54, 73, 243), rgb(19, 8, 8), rgb(236, 67, 242), rgb(235, 44, 72));
+    background: linear-gradient(to right, rgb(54, 73, 243), rgb(45, 244, 141), rgb(236, 67, 242), rgb(235, 44, 72));
    /*  text-shadow: 5px 10px 5px rgb(247, 247, 245); */
     background-clip: text;
     -webkit-background-clip: text;
@@ -60,12 +65,41 @@ nav ul li {
     font-weight: 450;
 }
 
+button {
+    border: transparent;
+    margin: 10px;
+    text-align: center;
 
-#toggle {
-    margin: 20px;
-    background-color: lightseagreen;
-    color: white;
-    border: none;
-    padding: 0.5em;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+button img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+@keyframes hourglassFlip {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.10); /* little zoom 🔥 */
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animate {
+  animation: hourglassFlip 0.6s ease-in-out;
+}
+
+
+
+
+
