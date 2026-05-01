@@ -69,6 +69,8 @@ button {
     border: transparent;
     margin: 10px;
     text-align: center;
+   /*  border-radius: 50%; */
+    background-color: transparent;
 
     display: flex;
     justify-content: center;
@@ -80,7 +82,8 @@ button img {
     height: 44px;
     object-fit: contain;
     border-radius: 50%;
-    background-color: transparent;
+   
+    
 }
 
 @keyframes hourglassFlip {
