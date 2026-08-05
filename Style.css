@@ -9,9 +9,14 @@ body.dark {
   color: white;
 }
 
+
 body.dark nav ul li {
     color: white;
     box-shadow: 0 0 5px white;
+}
+
+.dark main {
+  box-shadow: 0 0 3px white;
 }
 
 header {
